@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Step 3</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <style>body{margin:0}</style>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="model" src="3Dmodel.glb"></a-asset-item>
+      <img id="pano" src="foto360.jpg">
+    </a-assets>
+
+    <!-- 3D Model -->
+    <a-entity gltf-model="#model" position="0 1.2 -2" scale="1 1 1"></a-entity>
+
+    <!-- 360 Environment -->
+    <a-sky src="#pano" rotation="0 -90 0"></a-sky>
+  </a-scene>
+</body>
+</html>
